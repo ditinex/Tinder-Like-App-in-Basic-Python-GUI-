@@ -1,7 +1,7 @@
 from tkinter import *
 import mysql.connector
 
-class Login:
+class Tinder:
 	def __init__(self):
 		self.conn = mysql.connector.connect(host="localhost",user="root",password="",database="tinder")
 		self.mycursor = self.conn.cursor()
@@ -206,5 +206,5 @@ class Login:
 
 
 
-ob = Login()
+ob = Tinder()
 
