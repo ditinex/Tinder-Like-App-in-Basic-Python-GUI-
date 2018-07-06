@@ -65,7 +65,7 @@ class Login:
 		request_user_list = self.mycursor.fetchall()
 
 		self.clearAll()
-		self.root.title('View Proposal')
+		self.root.title('View Requests')
 		self.dashboard()
 		
 		for i in request_user_list:
@@ -79,7 +79,7 @@ class Login:
 		matched_user = self.mycursor.fetchall()
 
 		self.clearAll()
-		self.root.title('View Proposal')
+		self.root.title('View Matches')
 		self.dashboard()
 
 		for i in matched_user:
